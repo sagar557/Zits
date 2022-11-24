@@ -9,7 +9,7 @@
 $black_border: #000;
 $orange_border: #EA8A32;
 $shadow : 1px 1px 5px rgba(5, 5, 5, 0.529);
-$shadow-2: 0px 0px 15px 3px rgba(0, 0, 0, .25);
+$shadow-2: 0px 0px 10px 4px rgba(0, 0, 0, .4);
 
 
 
@@ -24,15 +24,22 @@ $footer_box:#121111;
 
 body {
     font-family: 'Roboto', sans-serif;
+    // cursor:url('data:image/x-icon;base64,AAACAAEAICAAAAAAAACoCAAAFgAAACgAAAAgAAAAQAAAAAEACAAAAAAAAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAP8IAP8RAAAA/+YABP8AAAD/iAAAav8AAP+3AACi/wALCxIAAHP/APL/AAAA6v8AALv/AACV/wDQ/wAAAP8RAAD/9wAAe/8AACb/AABV/wAAAP8A/8gAAP/3AAAA+/8AAP8aAF7/AAAA/1EA/wCzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABUcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAFQAAAA4AAAAAAAAVABgAAAAAAAAAAAAAAAAAAAAAAAAGEQAADAAJAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAABEEAAAZAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAsACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVAAAcCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMAAAkAAAAJCQkJAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAACQAACQAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAAAAKAAAACQkcAgsZDA4VABUAAAAAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHBRsBGg8WAAAEEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBEGFQAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxAXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////////////////////////////////////////////////8/////H////w////cPH//zDg//8Q5P//AOD//wDx//8A////AP///wH///8DgH//AwA//wAAH/4AAB/+AAf//AAD//wAAf/4AAD/+Af///Af///wf///8f////'),auto;
+    // cursor: url(https://cur.cursors-4u.net/people/peo-3/peo264.cur), auto !important;
+    // cursor: url(https://ani.cursors-4u.net/symbols/sym-8/sym761.ani), url(https://ani.cursors-4u.net/symbols/sym-8/sym761.png), auto !important;
+    // cursor: url(https://cur.cursors-4u.net/others/oth-8/oth722.ani), url(https://cur.cursors-4u.net/others/oth-8/oth722.png), auto !important;
+    // cursor: url(https://cur.cursors-4u.net/food/foo-2/foo112.ani), url(https://cur.cursors-4u.net/food/foo-2/foo112.png), auto !important;
+    cursor:url(/a.png),auto;
+
+
 }
 ul{
 	padding: 0;
 	li{
-		list-style: none;
+        list-style: none;
 		a{
-			text-decoration: none;
+            text-decoration: none;
 			color: $pour-white;
-
 		}
 	}
 }
@@ -65,8 +72,7 @@ ul{
     height: 100vh;
     display: grid;
     place-items: center;
-    border: 2px solid $orange_border;
-    margin-top: 1rem;
+    margin-top: 0rem;
 }
 .innovation{
     margin-top: 3rem;
@@ -76,6 +82,7 @@ ul{
         height: 30rem;
         // border: 1px solid $black_border;
         display: flex;
+        margin-top: 2rem;
 
     .tech_img {
         width: 40%;
@@ -84,6 +91,7 @@ ul{
             width: 100%;
             height: 100%;
             border-radius: 0 1rem 1rem 0;
+            box-shadow: $shadow-2;
         }
     }
 
@@ -113,128 +121,146 @@ ul{
 
 .companies{
 	width: 100%;
-	margin-top: 2rem;
-	// min-height: 70rem;
+	margin-top: 3rem;
 	overflow: hidden;
-	
-	border: 2px solid hotpink;
 	.heading{
 		text-align: center;
 	}
-	.companies_list{
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		.box{
-			width: calc(100% / 3);
-			aspect-ratio: 1/1;
-			margin: 0 5rem;
-			transform: rotate(45deg);
-			background: #000;
-		}
-		.c_1{
-			transform: translate(-7rem) rotate(45deg);
-		}
-		.c_3{
-			transform: translate(7rem) rotate(45deg);
-		}
-	}
-	.companies_list_2{
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		.box{
-			width: calc(100% / 4.5);
-			aspect-ratio: 1/1;
-			margin:0rem;
-			transform: rotate(45deg);
-			background: #000;
-		}
-		.c_1{
-			transform: translate(-4rem) rotate(45deg);
-		}
-		.c_3{
-			transform: translate(4rem) rotate(45deg);
-		}
-	}
-}
 
-
-.business_verticals {
-    width: 100%;
-    margin-top: 2rem;
-    // min-height: 20rem;
-
-    h1 {
-        font-size: 3.5vw;
-        text-align: center;
-    }
-
-    p {
-        text-align: justify;
-        font-size: 1.3rem;
-    }
-
-    .business_box {
-        display: flex;
+    .companies_list{
+        position: relative;
         width: 100%;
-
-        .box {
-            width: calc(100%/3);
-            height: 30rem;
-
-            .business_bg {
-                position: relative;
-
-                img {
-                    width: 100%;
-                }
-
-                .business_box_content {
-                    position: absolute;
-                    top: 0;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    h1{
-                        color: $orange_border;
-                        width: 80%;
-                        margin-top: 1rem;
-
-                    }
-                }
-            }
-
-            .business_bg_2 {
-                position: relative;
-
-                img {
-                    width: 100%;
-                }
-
-                .business_box_content {
-                    position: absolute;
-                    bottom: 0;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    h1{
-                        color: $orange_border;
-                        width: 80%;
-                        margin-top: 1rem;
-                        margin-bottom: 1rem;
-
-                    }
-                }
-            }
+        height: 60rem;
+        margin-top: 7rem;
+        .comp{
+            width: calc(75% / 3);
+            aspect-ratio: 1/1;
+            background: #000;
+            transform: rotate(45deg);
+            position: absolute;
+            display: grid;
+            place-items: center;
         }
-
+        .box{
+            width: 90%;
+            aspect-ratio: 1/1;
+            background: red;
+        }
+        .companies-1{
+            top:0rem;
+            left: 0;
+        }
+        .companies-2{
+            top:0rem;
+            left:50%;
+            transform: translate(-50%, 0) rotate(45deg) ;
+        }
+        .companies-3{
+            top:0rem;
+            right: 0;
+        }
+        .companies-4{
+            top: 26.5%;
+            left: 25%;
+            transform: translate(-25%, 0) rotate(45deg) ;
+        }
+        .companies-5{
+            top: 26.5%;
+            right:25%;
+            transform: translate(25%, 0) rotate(45deg) ;
+        }
+        .companies-6{
+            top: 53%;
+            left: 0;
+        }
+        .companies-7{
+            top: 53%;
+            left: 50%;
+            transform: translate(-50%, 0) rotate(45deg) ;
+        }
+        .companies-8{
+            top: 53%;
+            right:0%;
+        }
     }
 }
+
+
+// .business_verticals {
+//     width: 100%;
+//     margin-top: 2rem;
+//     // min-height: 20rem;
+
+//     h1 {
+//         font-size: 3.5vw;
+//         text-align: center;
+//     }
+
+//     p {
+//         text-align: justify;
+//         font-size: 1.3rem;
+//     }
+
+//     .business_box {
+//         display: flex;
+//         width: 100%;
+
+//         .box {
+//             width: calc(100%/3);
+//             height: 30rem;
+
+//             .business_bg {
+//                 position: relative;
+
+//                 img {
+//                     width: 100%;
+//                 }
+
+//                 .business_box_content {
+//                     position: absolute;
+//                     top: 0;
+//                     display: flex;
+//                     flex-direction: column;
+//                     align-items: center;
+//                     h1{
+//                         color: $orange_border;
+//                         width: 80%;
+//                         margin-top: 1rem;
+
+//                     }
+//                 }
+//             }
+
+//             .business_bg_2 {
+//                 position: relative;
+
+//                 img {
+//                     width: 100%;
+//                 }
+
+//                 .business_box_content {
+//                     position: absolute;
+//                     bottom: 0;
+//                     display: flex;
+//                     flex-direction: column;
+//                     align-items: center;
+//                     h1{
+//                         color: $orange_border;
+//                         width: 80%;
+//                         margin-top: 1rem;
+//                         margin-bottom: 1rem;
+
+//                     }
+//                 }
+//             }
+//         }
+
+//     }
+// }
 
 .vision_mission{
     width: 100%;
-    margin-top: 20rem;
+    margin-top: 3rem;
     height: 40rem;
     display: flex;
     .vision{
@@ -251,12 +277,10 @@ ul{
         }
         .vision_content{
             position: absolute;
-            top: 1rem;
+            top: 2rem;
             left: 50%;
             transform: translate(-50%, 0);
             color: $pour-white;
-
-
         }
     }
     .mission{
@@ -269,31 +293,27 @@ ul{
             img{
                 width: 100%;
                 height: 100%;
-
             }
         }
         .mission_content{
             position: absolute;
-            top: 1rem;
+            top:2rem;
             left: 50%;
             transform: translate(-50%, 0);
             color: $pour-white;
-
-
         }
     }
-
 }
-
 .careers{
 	width: 100%;
-	margin-top: 2rem;
+	margin-top: 3rem;
 	.heading{
 		text-align: center;
 	}
 	.careers_list{
 		display: flex;
 		justify-content: center;
+        margin-top: 1rem;
 		.box-1{
 			width: calc(100% / 8);
 			aspect-ratio: 1/1;
@@ -304,21 +324,20 @@ ul{
 		}
 	}
 }
-
 .coming_soon{
 	width: 100%;
-	margin-top: 2rem;
+	margin-top: 3rem;
 	.heading{
 		h1{
 			text-align: center;
 		}
 	}
 	.comming_soon_slider{
-		.carousel-indicators [data-bs-target] {
+        margin-top: 2rem;
+		ol>li {
 			width: 25px;
 			height: 25px;
 			border-radius: 50%;
-
 		}
 		.carousel-inner{
 			width: 100%;
@@ -355,7 +374,7 @@ ul{
 
 .stay_informed{
     width: 100%;
-    margin-top: 4rem;
+    margin-top: 3rem;
     display: grid;
     place-items: center;
     .box{
@@ -396,11 +415,22 @@ ul{
 
 footer{
 	width: 100%;
-	margin-top: 7rem;
-    background-color: $black_border;
+    min-height:15rem;
+	margin-top: 5rem;
     // background-image: url("img/footer/lines.jpeg");
+    background-image: url(/img/footer/lines1.png);
+    background-size: cover;
     position: relative;
-
+    background-color: rgba($color: #000000, $alpha: .9);
+    z-index: 9;
+    .bg_layer{
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
   
 
 .display_name{
@@ -433,7 +463,9 @@ footer{
     }
 
 }
-
+.footer_content{
+    z-index: 13;
+}
 	.weblinks{
         ul{
             display: flex;
